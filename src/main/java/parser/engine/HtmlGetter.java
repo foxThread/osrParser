@@ -1,13 +1,14 @@
 package parser.engine;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
+import org.springframework.stereotype.Service;
 
 import parser.exceptions.HtmlLoadException;
 
 
 
 
-
+@Service
 public abstract class HtmlGetter {
     
     

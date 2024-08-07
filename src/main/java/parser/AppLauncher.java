@@ -21,12 +21,7 @@ public class AppLauncher implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         
-        linksGetter
-                .setBaseUrl("https://www.farpost.ru/khabarovsk/realty/sell_houses")
-                .setCssExpression("a[data-role*=bulletin-link]")
-                .setPagePrefix("?page=")
-                .setFirstPage(1)
-                .setLastPage(1);
+       
 
     }
 

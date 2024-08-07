@@ -12,10 +12,12 @@ public class Threads{
         
         Thread.sleep(timeToSleep*1000); 
         }
+        
+        
         catch(InterruptedException e){
-            
+          
             Thread.currentThread().interrupt();
-            }
+        }
         
 
     }

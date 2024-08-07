@@ -6,17 +6,17 @@ import java.util.Iterator;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 import parser.exceptions.HtmlLoadException;
 import parser.exceptions.LinkGetterException;
 
-public class PagesLinksGetter implements LinksGetter {
+public  abstract class PagesLinksGetter implements LinksGetter {
 
-    @Autowired
+ 
     private PauseMaker pauseMaker;
 
-    @Autowired 
+  
     private HtmlGetter htmlGetter;
 
     private Iterator<String> currentPageLinks = null;
@@ -29,7 +29,9 @@ public class PagesLinksGetter implements LinksGetter {
     private String cssExpression="-2";
 
     
-    public PagesLinksGetter(){
+    public PagesLinksGetter(PauseMaker pauseMaker,HtmlGetter htmlGetter){
+        this.pauseMaker=pauseMaker;
+        this.htmlGetter=htmlGetter;
         shufflePageNumbers();
         currentPageLinks = Collections.emptyIterator();
         
