@@ -17,6 +17,7 @@ public class FarpostLinksGetter extends PagesLinksGetter {
         .setPagePrefix("?page=")
         .setFirstPage(1)
         .setLastPage(1);
+        System.out.println("new");
 
     }
     
