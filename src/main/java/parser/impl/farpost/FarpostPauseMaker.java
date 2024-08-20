@@ -1,5 +1,7 @@
 package parser.impl.farpost;
 
+import org.springframework.stereotype.Service;
+
 import parser.engine.PauseMaker;
 import parser.utils.Threads;
 
