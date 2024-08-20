@@ -15,7 +15,7 @@ RUN apt-get install -y dbus
 ENV DISPLAY :99
 COPY ./target /app
 RUN mkdir /chromium
-copy /home/me/chromium /chromium
+COPY /home/me/chromium /chromium
 RUN mkdir/chromium/rootcache
 RUN mkdir/chromium/rootcache/cache
 
