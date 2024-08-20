@@ -18,9 +18,8 @@ jobs:
           cache: maven
       - name: build
         run: mvn clean package 
-      -	name: copy jars
+      - name: copy jars
         run: mkdir app && cp target/*.jar app
-	
   prepare-environment:
     runs-on: self-hosted
     needs: build
