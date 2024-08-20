@@ -1,0 +1,26 @@
+version: "3"
+
+
+
+services:
+  parser:
+    build: .
+    depends_on:
+      - mongodb
+
+  mongodb:
+    environment:
+      
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=tgMDDh78
+    image: mongo:6-jammy
+    ports:
+      - '27018:27017'
+    volumes:
+      - data:/data/
+    
+volumes:
+  data:
+    
+  
+ 
