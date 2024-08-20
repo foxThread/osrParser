@@ -3,6 +3,7 @@ package parser.impl.farpost;
 import parser.engine.PauseMaker;
 import parser.utils.Threads;
 
+@Service
 public class FarpostPauseMaker  implements PauseMaker{
 
     private final int numberOfObjectsBeforeLongPause=10;
