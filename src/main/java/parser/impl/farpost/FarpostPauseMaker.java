@@ -12,7 +12,7 @@ public class FarpostPauseMaker  implements PauseMaker{
    private final int longPauseDuration=10;
    private final int smallPauseDuration=3;
 
-   private int currentCount=0;
+   private int currentCount=1;
    
    public FarpostPauseMaker(){
 
