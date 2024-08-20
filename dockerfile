@@ -1,5 +1,5 @@
 FROM osrimage:latest
 
-COPY ./target /app
+COPY ./app /app
 CMD /go.sh
 ADD ./stuff/go.sh /go.sh
