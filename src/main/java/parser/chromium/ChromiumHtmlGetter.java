@@ -2,6 +2,7 @@ package parser.chromium;
 
 import org.springframework.stereotype.Service;
 
+import jakarta.annotation.PostConstruct;
 import parser.engine.HtmlGetter;
 import parser.exceptions.JCEFInitException;
 
@@ -14,7 +15,8 @@ public class ChromiumHtmlGetter extends HtmlGetter{
 
     private Browser browser;
 
-    public ChromiumHtmlGetter() throws JCEFInitException{
+    @PostConstruct
+    public void init() throws JCEFInitException{
        browser=new Browser();
 
     }
